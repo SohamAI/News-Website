@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+    <!-- Navbar Starts Here -->
+    <nav>
+        <div class="main-navbar container flex">
+            <a href="/" class="main-logo">
+                <img src="assets/Black_and_White_Monochrome_Tech_Logo__1_-removebg-preview.png" alt="APP Logo">
+            </a>
+            <div class="nav-ul">
+                <ul class="flex">
+                    <li class="hover-lnk nav-item" id="trending" onclick="navClick('trending')">Trending&#128293;</li>
+                    <li class="hover-lnk nav-item" id="bollywood" onclick="navClick('bollywood')">BollyWood</li>
+                    <li class="hover-lnk nav-item" id="politics" onclick="navClick('politics')">Politics</li>
+
+                    <li class="hover-lnk nav-item" id="weather" onclick="navClick('weather')">Weather</li>
+                    <li class="hover-lnk nav-item" id="esports" onclick="navClick('esports')">E-Sports</li>
+                    <li class="hover-lnk nav-item" id="business" onclick="navClick('business')">Business</li>
+                    <li class="hover-lnk nav-item" id="stockmarket" onclick="navClick('stockmarket')">Stock Market</li>
+                    <li class="hover-lnk nav-item" id="education" onclick="navClick('Education')">Education</li>
+                    <!-- <li class="hover-lnk nav-item" id="automobile" onclick="navClick('automobile')">AutoMobiles</li> -->
+
+
+                    
+                </ul>
+            </div>
+            <div class="search-box flex">
+                <input id="search-text" type="text" class="search-inp" placeholder="e.g. Sports" >
+                <button id="search-btn" class="search-btn" >Search</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends Here -->
+
+    <!-- Main Content Starts Here :  -->
+    <main>
+        <div class="cards-container container flex" id="Card-Container">   
+        </div>
+    </main>
+
+    <!-- This Content is Later Rendered Using JavaScript -->
+    <template id="news-temp">
+        <div class="card">
+            <div class="crd-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="card-img">
+            </div>
+            <div class="card-content">
+                <h3 id="card-title">This is the title</h3>
+                <h6 class="card-source" id="card-source">End Gadget 25/02/2023</h6>
+                <p id="card-descp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla autem, ipsa nesciunt omnis ipsum mollitia molestias exercitationem sunt sequi odit dolor aliquam pariatur quia. Optio est ut beatae laudantium ipsum quia possimus dolor quo aperiam atque sunt, enim, tempore quos modi a praesentium unde excepturi omnis porro tenetur odit!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

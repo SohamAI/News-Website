@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&family=Roboto+Slab&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noticia Text', serif;
+}
+
+:root{
+    --primary-text-color : #183b56;
+    --secondary-text-color : #577592;
+    --accent-color : #2294ed;
+    --accent-color-dark : #1d69a3;
+    --padding-inline-section : 20px;   
+}
+
+body{
+    color: var(--primary-text-color);
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width : 1200px;
+    margin-inline: auto;
+    overflow: hidden;
+}   
+
+.main-navbar{
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.main-logo img{
+    width: 100px;
+}
+
+.nav-ul ul{
+    gap: 15px;
+}
+
+.nav-item.active{
+    color: var(--accent-color);
+}
+
+.hover-lnk:hover{
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+.hover-lnk:active{
+    color: red;
+}
+
+.search-box{
+    height: 30px;
+    gap: 12px;
+}
+
+.search-inp{
+    width: 230px;
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid var(--secondary-text-color);
+    padding-inline: 10px;
+}
+
+.search-btn{
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+}
+
+.search-btn:hover{
+    background-color: var(--accent-color-dark);
+}
+
+/* CSS for Main Container :  Starts Here*/
+
+main{
+    padding-block: 20px;
+    margin-top: 130px;
+}
+
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: start;
+}
+
+.card{
+    /* border: 2px solid black; */
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow:hidden;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    background-color: #f9fdff;
+    box-shadow: 1px 1px 8px #d4ecff;
+    transform: translateY(-2px);
+
+
+}
+
+.crd-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 12px;
+}
+
+.card-source{
+    margin-block: 12px;
+}
+
